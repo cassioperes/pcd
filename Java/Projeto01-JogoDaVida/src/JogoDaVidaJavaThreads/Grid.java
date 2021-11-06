@@ -1,4 +1,3 @@
-package JogoDaVidaJavaThreads;
 
 public class Grid
 {
@@ -7,7 +6,7 @@ public class Grid
 	public static final int GENERATIONS = 2000;
 	public static final int GENERATIONS_DEMONSTRATION = 5;
 	public static final boolean IS_DEMONSTRATION = false;
-	public static final int THREADS = 1;
+	public static final int THREADS = 8;
 	
 	//atributos
 	int size;

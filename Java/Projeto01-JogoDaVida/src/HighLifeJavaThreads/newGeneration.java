@@ -1,6 +1,3 @@
-package HighLifeJavaThreads;
-
-import HighLifeJavaThreads.Grid;
 
 public class newGeneration implements Runnable {
 

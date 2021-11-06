@@ -1,6 +1,3 @@
-package JogoDaVidaJavaThreads;
-
-import JogoDaVidaJavaThreads.Grid;
 
 public class newGeneration implements Runnable {
 

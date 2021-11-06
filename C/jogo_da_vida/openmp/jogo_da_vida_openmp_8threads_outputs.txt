@@ -2002,9 +2002,9 @@ Geracao 1999: 51
 Geracao 2000: 51
 
 TEMPO DECORRIDO PARA ATUALIZAR TABULEIRO PARA TODAS AS GERACOES:
-Tempo total em milisegundos: 404253
-Tempo total (minutos:segundos:milisegundos): 6:44:253
+Tempo total em milisegundos: 370559
+Tempo total (minutos:segundos:milisegundos): 6:10:559
 
 TEMPO TOTAL DE EXECUCAO:
-Tempo total em milisegundos: 404466
-Tempo total (minutos:segundos:milisegundos): 6:44:466
+Tempo total em milisegundos: 370843
+Tempo total (minutos:segundos:milisegundos): 6:10:843

@@ -2000,11 +2000,5 @@ Geracao 1997: 51
 Geracao 1998: 51
 Geracao 1999: 51
 Geracao 2000: 51
-
-TEMPO DECORRIDO PARA ATUALIZAR TABULEIRO PARA TODAS AS GERACOES:
-Tempo total em milisegundos: 586494
-Tempo total (minutos:segundos:milisegundos): 9:46:494
-
-TEMPO TOTAL DE EXECUCAO:
-Tempo total em milisegundos: 586571
-Tempo total (minutos:segundos:milisegundos): 9:46:571
+TEMPO DECORRIDO PARA ATUALIZAR TABULEIRO PARA TODAS AS GERACOES: 295309
+TEMPO TOTAL DE EXECUCAO: 295418

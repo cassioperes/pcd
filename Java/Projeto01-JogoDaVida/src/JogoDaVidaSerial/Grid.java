@@ -1,4 +1,3 @@
-package JogoDaVidaSerial;
 
 public class Grid
 {

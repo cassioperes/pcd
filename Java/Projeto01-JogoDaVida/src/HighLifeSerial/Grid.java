@@ -1,4 +1,3 @@
-package HighLifeSerial;
 
 public class Grid
 {
@@ -12,7 +11,7 @@ public class Grid
 	int size;
 	int[][] grid;
 	
-	//métodos
+	//metodos
 	public void setSize(int t)
 	{
 		this.size = t;
@@ -139,13 +138,13 @@ public class Grid
 	            for(j = 0; j < this.size; j++){
 	                neighbors = this.getNeighbors(i, j);
 
-	                //Qualquer célula viva com 2 (dois) ou 3 (três) vizinhos deve sobreviver;
+	                //Qualquer celula viva com 2 (dois) ou 3 (tres) vizinhos deve sobreviver;
 	                if(this.grid[i][j] == 1 && (neighbors == 2 || neighbors == 3))
 	                    newGrid.grid[i][j] = 1;
-	                //Qualquer célula morta com 3 (três) vizinhos torna-se viva;
+	                //Qualquer celula morta com 3 (tres) vizinhos torna-se viva;
 	                else if(this.grid[i][j] == 0 && neighbors == 3)
 	                    newGrid.grid[i][j] = 1;
-	                //Qualquer outro caso, células vivas devem morrer e células já mortas devem continuar mortas.
+	                //Qualquer outro caso, celulas vivas devem morrer e celulas ja mortas devem continuar mortas.
 	                else
 	                    newGrid.grid[i][j] = 0;
 	            }
@@ -158,7 +157,7 @@ public class Grid
 	    }
 	}
 	
-	public static void main(int[] args)
+	public static void main(final String[] args)
 	{
 		long beginTotal, endTotal, beginGen, endGen;
 		//Inicia contagem do tempo de execucao

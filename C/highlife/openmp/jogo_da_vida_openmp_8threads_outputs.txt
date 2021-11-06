@@ -1,4 +1,4 @@
-HIGHLIFE: VERSAO SERIAL
+HIGHLIFE: VERSAO OPENMP
 Condicao inicial: 10
 Geracao 1: 11
 Geracao 2: 13
@@ -2002,9 +2002,9 @@ Geracao 1999: 5
 Geracao 2000: 5
 
 TEMPO DECORRIDO PARA ATUALIZAR TABULEIRO PARA TODAS AS GERACOES:
-Tempo total em milisegundos: 593015
-Tempo total (minutos:segundos:milisegundos): 9:53:15
+Tempo total em milisegundos: 312546
+Tempo total (minutos:segundos:milisegundos): 5:12:546
 
 TEMPO TOTAL DE EXECUCAO:
-Tempo total em milisegundos: 593043
-Tempo total (minutos:segundos:milisegundos): 9:53:43
+Tempo total em milisegundos: 312857
+Tempo total (minutos:segundos:milisegundos): 5:12:857

@@ -1,4 +1,4 @@
-JOGO DA VIDA: VERSAO SERIAL
+JOGO DA VIDA: VERSAO OPENMP
 Condicao inicial: 10
 Geracao 1: 11
 Geracao 2: 12
@@ -2002,9 +2002,9 @@ Geracao 1999: 51
 Geracao 2000: 51
 
 TEMPO DECORRIDO PARA ATUALIZAR TABULEIRO PARA TODAS AS GERACOES:
-Tempo total em milisegundos: 586494
-Tempo total (minutos:segundos:milisegundos): 9:46:494
+Tempo total em milisegundos: 425127
+Tempo total (minutos:segundos:milisegundos): 7:5:127
 
 TEMPO TOTAL DE EXECUCAO:
-Tempo total em milisegundos: 586571
-Tempo total (minutos:segundos:milisegundos): 9:46:571
+Tempo total em milisegundos: 425235
+Tempo total (minutos:segundos:milisegundos): 7:5:235
