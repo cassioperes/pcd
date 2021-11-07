@@ -21,8 +21,8 @@ public class newGeneration implements Runnable {
 	                //Qualquer celula viva com 2 (dois) ou 3 (tres) vizinhos deve sobreviver;
 	                if(gridA.grid[i][j] == 1 && (neighbors == 2 || neighbors == 3))
 	                    gridB.grid[i][j] = 1;
-	                //Qualquer celula morta com 3 (tres) vizinhos torna-se viva;
-	                else if(gridA.grid[i][j] == 0 && neighbors == 3)
+	                //Qualquer celula morta com 3 (tres) ou 6 (seis) vizinhos torna-se viva;
+	                else if(gridA.grid[i][j] == 0 && (neighbors == 3 || neighbors == 6))
 	                    gridB.grid[i][j] = 1;
 	                //Qualquer outro caso, celulas vivas devem morrer e celulas ja mortas devem continuar mortas.
 	                else

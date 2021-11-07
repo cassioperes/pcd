@@ -174,7 +174,7 @@ public class Grid
 		//Inicia contagem do tempo de execucao
 		beginTotal = System.currentTimeMillis();
 
-		System.out.println("JOGO DA VIDA: VERSAO SERIAL");
+		System.out.println("HIGHLIFE: VERSAO JAVA THREADS");
 
 	    Grid grid = new Grid(SIZE);
 	    grid.setFirstGeneration();

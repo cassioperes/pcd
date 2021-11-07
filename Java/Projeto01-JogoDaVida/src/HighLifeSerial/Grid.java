@@ -125,6 +125,7 @@ public class Grid
 		//Imprime a quantidade de celulas vivas para cada nova geracao considerando as regras do jogo 
 
 	    int cells, gen, num_gen, i, j, neighbors;
+	    int[][] aux;
 	    Grid newGrid = new Grid(this.size);
 
 	    if(IS_DEMONSTRATION)
@@ -141,14 +142,18 @@ public class Grid
 	                //Qualquer celula viva com 2 (dois) ou 3 (tres) vizinhos deve sobreviver;
 	                if(this.grid[i][j] == 1 && (neighbors == 2 || neighbors == 3))
 	                    newGrid.grid[i][j] = 1;
-	                //Qualquer celula morta com 3 (tres) vizinhos torna-se viva;
-	                else if(this.grid[i][j] == 0 && neighbors == 3)
+	                //Qualquer celula morta com 3 (tres) ou 6 (seis) vizinhos torna-se viva;
+	                else if(this.grid[i][j] == 0 && (neighbors == 3 || neighbors == 6))
 	                    newGrid.grid[i][j] = 1;
 	                //Qualquer outro caso, celulas vivas devem morrer e celulas ja mortas devem continuar mortas.
 	                else
 	                    newGrid.grid[i][j] = 0;
 	            }
 	        }
+	        
+	        aux = this.grid;
+	        this.grid = newGrid.grid;
+	        newGrid.grid = aux;
 
 	        cells = this.countCells();
 	        System.out.println("Geracao " + gen +": " +  cells);
@@ -163,7 +168,7 @@ public class Grid
 		//Inicia contagem do tempo de execucao
 		beginTotal = System.currentTimeMillis();
 
-		System.out.println("JOGO DA VIDA: VERSAO SERIAL");
+		System.out.println("HIGHLIFE: VERSAO SERIAL");
 
 	    Grid grid = new Grid(SIZE);
 	    grid.setFirstGeneration();
