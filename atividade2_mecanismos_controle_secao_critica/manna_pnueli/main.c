@@ -16,7 +16,7 @@ Isabella de Souza Navarro, 86828
 #include<unistd.h>
 
 #define NUM_THREADS 4
-#define USE_PRE_PROTOCOL false
+#define USE_PRE_PROTOCOL true
 #define USE_COLORS_ON_TERMINAL true //flag para decidir se deseja mostrar as cores no terminal
 
 #define ITERATIONS 1000000000
