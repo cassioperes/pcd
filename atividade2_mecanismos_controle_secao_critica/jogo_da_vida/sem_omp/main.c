@@ -24,8 +24,6 @@ Isabella de Souza Navarro, 86828
 #define PRINT_ONLY_TIME false
 #define THREADS 4
 
-int *sumCells;
-
 struct t_data {
     int begin;
     int end;
@@ -291,7 +289,6 @@ int main(){
     printf("JOGO DA VIDA: VERSAO OPENMP\n");
 
     omp_set_num_threads(THREADS);
-    sumCells = (int*) calloc (THREADS, sizeof(int));
 
     grid = createGrid();
     setFirstGeneration(grid);
