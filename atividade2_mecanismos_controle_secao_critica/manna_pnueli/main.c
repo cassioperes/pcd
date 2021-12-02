@@ -94,18 +94,64 @@ void server(){
     //Funcao servidor do algoritmo
 
     while(true){
-        while(request == 0){
+        while(request == 0){ //await request != 0
             //nao faz nada
         }
         
         respond = request;
         serverMsg(respond);
 
-        while(respond != 0){
+        while(respond != 0){ //await respond == 0
             //nao faz nada
         }
         
         request = 0;
+    }
+}
+
+void run2Clients(){
+    //Executa algoritmo com 2 clientes e 1 servidor utilizando sections
+
+    #pragma omp parallel \
+    shared(SOMA, request, respond)
+    {
+        #pragma omp sections nowait
+        {
+            #pragma omp section
+            server();
+
+            #pragma omp section
+            client(1);
+
+            #pragma omp section
+            client(2);
+        }
+    }
+}
+
+void run4Clients(){
+    //Executa algoritmo com 4 clientes e 1 servidor utilizando sections
+
+    #pragma omp parallel \
+    shared(SOMA, request, respond)
+    {
+        #pragma omp sections nowait
+        {
+            #pragma omp section
+            server();
+
+            #pragma omp section
+            client(1);
+
+            #pragma omp section
+            client(2);
+            
+            #pragma omp section
+            client(3);
+
+            #pragma omp section
+            client(4);
+        }
     }
 }
 
@@ -118,19 +164,10 @@ int main(){
 
     omp_set_num_threads(NUM_THREADS + 1);
 
-    #pragma omp parallel \
-    shared(SOMA, request, respond)
-    {
-        #pragma omp single
-        {
-            for(i = 1; i <= NUM_THREADS; i++){
-                #pragma omp task
-                client(i);
-            }
-
-            server();
-        }
-    }
+    if(NUM_THREADS == 2)
+        run2Clients();
+    else
+        run4Clients();
 
     return 0;
 }

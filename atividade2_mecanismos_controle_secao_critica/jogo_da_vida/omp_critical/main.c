@@ -20,7 +20,7 @@ Isabella de Souza Navarro, 86828
 #define GENERATIONS 2000
 #define GENERATIONS_DEMONSTRATION 5
 #define IS_DEMONSTRATION false
-#define PRINT_ONLY_TIME false
+#define PRINT_ONLY_TIME true
 #define THREADS 4
 
 int sumCells = 0;
