@@ -6,7 +6,6 @@ public class TrafficController {
         try{
             while(bridgeOccupied)
                 wait();
-            notify();
             this.bridgeOccupied = true;
         }
         catch(InterruptedException ie){
@@ -19,7 +18,6 @@ public class TrafficController {
         try{
             while(bridgeOccupied)
                 wait();
-            notify();
             this.bridgeOccupied = true;
         }
         catch(InterruptedException ie){
