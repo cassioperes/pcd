@@ -20,7 +20,7 @@ Isabella de Souza Navarro, 86828
 #define GENERATIONS 2000
 #define GENERATIONS_DEMONSTRATION 5
 #define IS_DEMONSTRATION false
-#define THREADS 1
+#define THREADS 8
 
 void printTimeElapsed(struct timeval begin, struct timeval end, char *msg){
     //Imprime o tempo decorrido entre begin e end em minutos:segundos:milisegundos 
