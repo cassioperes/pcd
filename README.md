@@ -14,6 +14,10 @@ Paralelização de filtros para processamento de imagens.
 
 **Repositório original:** https://github.com/onyx-storm/Filter-Program  
 
+**Formato das imagens de entrada e saída:**
+A imagem de entrada deve ser um bitmap 24bits com extensão .bmp.  
+A imagem de saída também será um bitmap 24bits e deve possuir a extensão .bmp na linha de comando.  
+
 **Como compilar:**
 ```bash
 gcc -o main filter.c helpers.c -lm -fopenmp
